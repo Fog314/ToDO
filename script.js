@@ -10,14 +10,12 @@ function getStorageData() {
 
 getStorageData();
 
-
-$('.checkmark').click((event) => {
+$('.container').click((event) => {
     if (event.target.style.backgroundColor != '#2196F3') {
         localStorage.removeItem(event.target.getAttribute('id'));
-        window.location.href=window.location.href;
+        window.location.href = window.location.href;
     }
 });
-
 
 
 $('form').on('submit', (event) => {
@@ -28,10 +26,10 @@ $('form').on('submit', (event) => {
     localStorage.setItem(keyLocal, $('.container').last().text());
 
     keyLocal++;
-    $('.checkmark').click((event) => {
+    $('.container').click((event) => {
         if (event.target.style.backgroundColor != '#2196F3') {
             localStorage.removeItem(event.target.getAttribute('id'));
-            window.location.href=window.location.href;
+            window.location.href = window.location.href;
         }
     });
 })
