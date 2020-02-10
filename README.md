@@ -1,4 +1,4 @@
 # ToDo
 simple task manager(beta)
 
-Used: HTML, CSS. JQuery
+Used: HTML, CSS, JQuery
